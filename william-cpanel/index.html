@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LimpaBrasil - Empresa de Limpeza Profissional</title>
+    <meta name="description" content="Empresa de limpeza profissional com serviços residenciais e comerciais. Agendamento online disponível.">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: {
+                            50: '#f0f9ff',
+                            100: '#e0f2fe',
+                            200: '#bae6fd',
+                            300: '#7dd3fc',
+                            400: '#38bdf8',
+                            500: '#0ea5e9',
+                            600: '#0284c7',
+                            700: '#0369a1',
+                            800: '#075985',
+                            900: '#0c4a6e'
+                        },
+                        secondary: {
+                            50: '#f8fafc',
+                            100: '#f1f5f9',
+                            200: '#e2e8f0',
+                            300: '#cbd5e1',
+                            400: '#94a3b8',
+                            500: '#64748b',
+                            600: '#475569',
+                            700: '#334155',
+                            800: '#1e293b',
+                            900: '#0f172a'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Feather Icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="bg-white">
+    <!-- Header/Navigation -->
+    <header class="bg-white shadow-lg fixed w-full top-0 z-50">
+        <nav class="container mx-auto px-4 py-4">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center space-x-3">
+                    <img src="assets/images/logo.svg" alt="LimpaBrasil" class="h-10 w-10">
+                    <h1 class="text-2xl font-bold text-primary-600">LimpaBrasil</h1>
+                </div>
+                
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="text-secondary-700 hover:text-primary-600 font-medium transition-colors">Início</a>
+                    <a href="sobre.html" class="text-secondary-700 hover:text-primary-600 font-medium transition-colors">Sobre</a>
+                    <a href="servicos.html" class="text-secondary-700 hover:text-primary-600 font-medium transition-colors">Serviços</a>
+                    <a href="agendamento.html" class="text-secondary-700 hover:text-primary-600 font-medium transition-colors">Agendamento</a>
+                    <a href="contato.html" class="text-secondary-700 hover:text-primary-600 font-medium transition-colors">Contato</a>
+                </div>
+                
+                <!-- CTA Button -->
+                <div class="hidden md:flex space-x-3">
+                    <a href="agendamento.html" class="bg-primary-600 hover:bg-primary-700 text-white px-6 py-3 rounded-lg font-medium transition-colors">
+                        Agendar Serviço
+                    </a>
+                    <a href="admin/login.php" class="border border-secondary-300 text-secondary-700 hover:bg-secondary-100 px-4 py-3 rounded-lg font-medium transition-colors flex items-center space-x-2">
+                        <i data-feather="user" class="w-4 h-4"></i>
+                        <span>Login</span>
+                    </a>
+                </div>
+                
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" class="md:hidden p-2">
+                    <i data-feather="menu" class="w-6 h-6"></i>
+                </button>
+            </div>
+            
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="hidden md:hidden mt-4 pb-4">
+                <a href="index.html" class="block py-2 text-secondary-700 hover:text-primary-600">Início</a>
+                <a href="sobre.html" class="block py-2 text-secondary-700 hover:text-primary-600">Sobre</a>
+                <a href="servicos.html" class="block py-2 text-secondary-700 hover:text-primary-600">Serviços</a>
+                <a href="agendamento.html" class="block py-2 text-secondary-700 hover:text-primary-600">Agendamento</a>
+                <a href="contato.html" class="block py-2 text-secondary-700 hover:text-primary-600">Contato</a>
+                <div class="mt-4 space-y-2">
+                    <a href="agendamento.html" class="block bg-primary-600 hover:bg-primary-700 text-white px-6 py-3 rounded-lg font-medium text-center">
+                        Agendar Serviço
+                    </a>
+                    <a href="admin/login.php" class="block border border-secondary-300 text-secondary-700 hover:bg-secondary-100 px-6 py-3 rounded-lg font-medium text-center">
+                        Login Administrativo
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="pt-24 pb-16 bg-gradient-to-br from-primary-50 to-primary-100">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-4xl md:text-5xl font-bold text-secondary-900 mb-6 leading-tight">
+                        Limpeza Profissional
+                        <span class="text-primary-600">Para Sua Casa e Empresa</span>
+                    </h2>
+                    <p class="text-xl text-secondary-600 mb-8 leading-relaxed">
+                        Oferecemos serviços de limpeza residencial e comercial com qualidade profissional, 
+                        usando produtos ecológicos e equipamentos modernos.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <a href="agendamento.html" class="bg-primary-600 hover:bg-primary-700 text-white px-8 py-4 rounded-lg font-medium text-center transition-colors">
+                            Agendar Agora
+                        </a>
+                        <a href="servicos.html" class="border border-primary-600 text-primary-600 hover:bg-primary-600 hover:text-white px-8 py-4 rounded-lg font-medium text-center transition-colors">
+                            Ver Serviços
+                        </a>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="bg-white rounded-2xl shadow-2xl p-8">
+                        <div class="grid grid-cols-2 gap-6">
+                            <div class="text-center">
+                                <div class="bg-primary-100 rounded-full p-4 w-16 h-16 mx-auto mb-3 flex items-center justify-center">
+                                    <i data-feather="home" class="w-8 h-8 text-primary-600"></i>
+                                </div>
+                                <h3 class="font-semibold text-secondary-900">Residencial</h3>
+                            </div>
+                            <div class="text-center">
+                                <div class="bg-primary-100 rounded-full p-4 w-16 h-16 mx-auto mb-3 flex items-center justify-center">
+                                    <i data-feather="briefcase" class="w-8 h-8 text-primary-600"></i>
+                                </div>
+                                <h3 class="font-semibold text-secondary-900">Comercial</h3>
+                            </div>
+                            <div class="text-center">
+                                <div class="bg-primary-100 rounded-full p-4 w-16 h-16 mx-auto mb-3 flex items-center justify-center">
+                                    <i data-feather="clock" class="w-8 h-8 text-primary-600"></i>
+                                </div>
+                                <h3 class="font-semibold text-secondary-900">24/7</h3>
+                            </div>
+                            <div class="text-center">
+                                <div class="bg-primary-100 rounded-full p-4 w-16 h-16 mx-auto mb-3 flex items-center justify-center">
+                                    <i data-feather="shield" class="w-8 h-8 text-primary-600"></i>
+                                </div>
+                                <h3 class="font-semibold text-secondary-900">Seguro</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-secondary-900 mb-4">
+                    Nossos Serviços
+                </h2>
+                <p class="text-xl text-secondary-600 max-w-2xl mx-auto">
+                    Oferecemos uma gama completa de serviços de limpeza para atender todas as suas necessidades
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white border border-secondary-200 rounded-xl p-8 hover:shadow-lg transition-shadow">
+                    <div class="bg-primary-100 rounded-full p-4 w-16 h-16 mx-auto mb-6 flex items-center justify-center">
+                        <i data-feather="home" class="w-8 h-8 text-primary-600"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-secondary-900 mb-4 text-center">Limpeza Residencial</h3>
+                    <p class="text-secondary-600 mb-6 text-center">
+                        Limpeza completa de residências, apartamentos e casas com produtos seguros e ecológicos.
+                    </p>
+                    <ul class="space-y-2 text-sm text-secondary-600">
+                        <li class="flex items-center">
+                            <i data-feather="check" class="w-4 h-4 text-primary-600 mr-2"></i>
+                            Limpeza de todos os cômodos
+                        </li>
+                        <li class="flex items-center">
+                            <i data-feather="check" class="w-4 h-4 text-primary-600 mr-2"></i>
+                            Produtos ecológicos
+                        </li>
+                        <li class="flex items-center">
+                            <i data-feather="check" class="w-4 h-4 text-primary-600 mr-2"></i>
+                            Equipe treinada
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="bg-white border border-secondary-200 rounded-xl p-8 hover:shadow-lg transition-shadow">
+                    <div class="bg-primary-100 rounded-full p-4 w-16 h-16 mx-auto mb-6 flex items-center justify-center">
+                        <i data-feather="briefcase" class="w-8 h-8 text-primary-600"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-secondary-900 mb-4 text-center">Limpeza Comercial</h3>
+                    <p class="text-secondary-600 mb-6 text-center">
+                        Serviços especializados para escritórios, lojas, restaurantes e estabelecimentos comerciais.
+                    </p>
+                    <ul class="space-y-2 text-sm text-secondary-600">
+                        <li class="flex items-center">
+                            <i data-feather="check" class="w-4 h-4 text-primary-600 mr-2"></i>
+                            Horários flexíveis
+                        </li>
+                        <li class="flex items-center">
+                            <i data-feather="check" class="w-4 h-4 text-primary-600 mr-2"></i>
+                            Equipamentos profissionais
+                        </li>
+                        <li class="flex items-center">
+                            <i data-feather="check" class="w-4 h-4 text-primary-600 mr-2"></i>
+                            Contratos mensais
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="bg-white border border-secondary-200 rounded-xl p-8 hover:shadow-lg transition-shadow">
+                    <div class="bg-primary-100 rounded-full p-4 w-16 h-16 mx-auto mb-6 flex items-center justify-center">
+                        <i data-feather="droplet" class="w-8 h-8 text-primary-600"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-secondary-900 mb-4 text-center">Limpeza Pós-Obra</h3>
+                    <p class="text-secondary-600 mb-6 text-center">
+                        Limpeza especializada após reformas e construções, removendo resíduos e sujeira pesada.
+                    </p>
+                    <ul class="space-y-2 text-sm text-secondary-600">
+                        <li class="flex items-center">
+                            <i data-feather="check" class="w-4 h-4 text-primary-600 mr-2"></i>
+                            Remoção de entulho
+                        </li>
+                        <li class="flex items-center">
+                            <i data-feather="check" class="w-4 h-4 text-primary-600 mr-2"></i>
+                            Limpeza profunda
+                        </li>
+                        <li class="flex items-center">
+                            <i data-feather="check" class="w-4 h-4 text-primary-600 mr-2"></i>
+                            Equipamentos especializados
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="py-16 bg-secondary-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-secondary-900 mb-4">
+                    Por Que Nos Escolher?
+                </h2>
+                <p class="text-xl text-secondary-600 max-w-2xl mx-auto">
+                    Somos reconhecidos pela excelência em nossos serviços e pelo compromisso com a satisfação do cliente
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="text-center">
+                    <div class="bg-primary-600 text-white rounded-full p-6 w-20 h-20 mx-auto mb-4 flex items-center justify-center">
+                        <i data-feather="award" class="w-8 h-8"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-secondary-900 mb-2">+10 Anos</h3>
+                    <p class="text-secondary-600">de experiência no mercado</p>
+                </div>
+                
+                <div class="text-center">
+                    <div class="bg-primary-600 text-white rounded-full p-6 w-20 h-20 mx-auto mb-4 flex items-center justify-center">
+                        <i data-feather="users" class="w-8 h-8"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-secondary-900 mb-2">+1000</h3>
+                    <p class="text-secondary-600">clientes satisfeitos</p>
+                </div>
+                
+                <div class="text-center">
+                    <div class="bg-primary-600 text-white rounded-full p-6 w-20 h-20 mx-auto mb-4 flex items-center justify-center">
+                        <i data-feather="clock" class="w-8 h-8"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-secondary-900 mb-2">24/7</h3>
+                    <p class="text-secondary-600">disponibilidade</p>
+                </div>
+                
+                <div class="text-center">
+                    <div class="bg-primary-600 text-white rounded-full p-6 w-20 h-20 mx-auto mb-4 flex items-center justify-center">
+                        <i data-feather="shield-check" class="w-8 h-8"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-secondary-900 mb-2">100%</h3>
+                    <p class="text-secondary-600">garantia de qualidade</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 bg-primary-600">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">
+                Pronto Para Ter Sua Casa ou Empresa Impecável?
+            </h2>
+            <p class="text-xl text-primary-100 mb-8 max-w-2xl mx-auto">
+                Entre em contato conosco hoje mesmo e solicite um orçamento gratuito para seus serviços de limpeza
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="agendamento.html" class="bg-white text-primary-600 hover:bg-secondary-100 px-8 py-4 rounded-lg font-medium transition-colors">
+                    Agendar Serviço
+                </a>
+                <a href="contato.html" class="border border-white text-white hover:bg-white hover:text-primary-600 px-8 py-4 rounded-lg font-medium transition-colors">
+                    Falar Conosco
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-secondary-900 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center space-x-3 mb-4">
+                        <img src="assets/images/logo.svg" alt="LimpaBrasil" class="h-8 w-8">
+                        <h3 class="text-xl font-bold">LimpaBrasil</h3>
+                    </div>
+                    <p class="text-secondary-400 mb-4">
+                        Sua empresa de limpeza profissional de confiança há mais de 10 anos.
+                    </p>
+                    <div class="flex space-x-3">
+                        <a href="#" class="bg-secondary-800 hover:bg-secondary-700 p-2 rounded">
+                            <i data-feather="facebook" class="w-5 h-5"></i>
+                        </a>
+                        <a href="#" class="bg-secondary-800 hover:bg-secondary-700 p-2 rounded">
+                            <i data-feather="instagram" class="w-5 h-5"></i>
+                        </a>
+                        <a href="#" class="bg-secondary-800 hover:bg-secondary-700 p-2 rounded">
+                            <i data-feather="phone" class="w-5 h-5"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Serviços</h4>
+                    <ul class="space-y-2 text-secondary-400">
+                        <li><a href="servicos.html" class="hover:text-white transition-colors">Limpeza Residencial</a></li>
+                        <li><a href="servicos.html" class="hover:text-white transition-colors">Limpeza Comercial</a></li>
+                        <li><a href="servicos.html" class="hover:text-white transition-colors">Limpeza Pós-Obra</a></li>
+                        <li><a href="servicos.html" class="hover:text-white transition-colors">Limpeza de Escritórios</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Empresa</h4>
+                    <ul class="space-y-2 text-secondary-400">
+                        <li><a href="sobre.html" class="hover:text-white transition-colors">Sobre Nós</a></li>
+                        <li><a href="servicos.html" class="hover:text-white transition-colors">Nossos Serviços</a></li>
+                        <li><a href="contato.html" class="hover:text-white transition-colors">Contato</a></li>
+                        <li><a href="agendamento.html" class="hover:text-white transition-colors">Agendamento</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Contato</h4>
+                    <div class="space-y-3 text-secondary-400">
+                        <div class="flex items-center space-x-3">
+                            <i data-feather="phone" class="w-5 h-5"></i>
+                            <span>(31) 98025-2882</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <i data-feather="mail" class="w-5 h-5"></i>
+                            <span>contato@limpabrasil.com.br</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <i data-feather="map-pin" class="w-5 h-5"></i>
+                            <span>São José da Lapa, MG - Brasil</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-secondary-800 mt-8 pt-8 text-center text-secondary-400">
+                <p>&copy; 2025 LimpaBrasil. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+    <script>
+        feather.replace()
+    </script>
+</body>
+</html>

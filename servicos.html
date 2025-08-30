@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serviços - LimpaBrasil</title>
+    <meta name="description" content="Conheça todos os serviços de limpeza profissional da LimpaBrasil: residencial, comercial, pós-obra e muito mais.">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: {
+                            50: '#f0f9ff',
+                            100: '#e0f2fe',
+                            200: '#bae6fd',
+                            300: '#7dd3fc',
+                            400: '#38bdf8',
+                            500: '#0ea5e9',
+                            600: '#0284c7',
+                            700: '#0369a1',
+                            800: '#075985',
+                            900: '#0c4a6e'
+                        },
+                        secondary: {
+                            50: '#f8fafc',
+                            100: '#f1f5f9',
+                            200: '#e2e8f0',
+                            300: '#cbd5e1',
+                            400: '#94a3b8',
+                            500: '#64748b',
+                            600: '#475569',
+                            700: '#334155',
+                            800: '#1e293b',
+                            900: '#0f172a'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="bg-white">
+    <!-- Header/Navigation -->
+    <header class="bg-white shadow-lg fixed w-full top-0 z-50">
+        <nav class="container mx-auto px-4 py-4">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center space-x-3">
+                    <img src="assets/images/logo.svg" alt="LimpaBrasil" class="h-10 w-10">
+                    <h1 class="text-2xl font-bold text-primary-600">LimpaBrasil</h1>
+                </div>
+                
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="text-secondary-700 hover:text-primary-600 font-medium transition-colors">Início</a>
+                    <a href="sobre.html" class="text-secondary-700 hover:text-primary-600 font-medium transition-colors">Sobre</a>
+                    <a href="servicos.html" class="text-primary-600 font-medium">Serviços</a>
+                    <a href="agendamento.html" class="text-secondary-700 hover:text-primary-600 font-medium transition-colors">Agendamento</a>
+                    <a href="contato.html" class="text-secondary-700 hover:text-primary-600 font-medium transition-colors">Contato</a>
+                </div>
+                
+                <!-- CTA Button -->
+                <div class="hidden md:block">
+                    <a href="agendamento.html" class="bg-primary-600 hover:bg-primary-700 text-white px-6 py-3 rounded-lg font-medium transition-colors">
+                        Agendar Serviço
+                    </a>
+                </div>
+                
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" class="md:hidden p-2">
+                    <i data-feather="menu" class="w-6 h-6"></i>
+                </button>
+            </div>
+            
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="hidden md:hidden mt-4 pb-4">
+                <a href="index.html" class="block py-2 text-secondary-700 hover:text-primary-600">Início</a>
+                <a href="sobre.html" class="block py-2 text-secondary-700 hover:text-primary-600">Sobre</a>
+                <a href="servicos.html" class="block py-2 text-primary-600">Serviços</a>
+                <a href="agendamento.html" class="block py-2 text-secondary-700 hover:text-primary-600">Agendamento</a>
+                <a href="contato.html" class="block py-2 text-secondary-700 hover:text-primary-600">Contato</a>
+                <a href="agendamento.html" class="block mt-4 bg-primary-600 hover:bg-primary-700 text-white px-6 py-3 rounded-lg font-medium text-center">
+                    Agendar Serviço
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="pt-24 pb-16 bg-gradient-to-br from-primary-50 to-primary-100">
+        <div class="container mx-auto px-4">
+            <div class="text-center">
+                <h1 class="text-4xl md:text-5xl font-bold text-secondary-900 mb-6">
+                    Nossos <span class="text-primary-600">Serviços</span>
+                </h1>
+                <p class="text-xl text-secondary-600 max-w-3xl mx-auto">
+                    Oferecemos uma ampla gama de serviços de limpeza profissional para 
+                    atender todas as suas necessidades com qualidade e eficiência.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Grid -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Limpeza Residencial -->
+                <div class="bg-white border border-secondary-200 rounded-xl p-8 hover:shadow-xl transition-all duration-300">
+                    <div class="bg-primary-100 rounded-full p-4 w-16 h-16 mx-auto mb-6 flex items-center justify-center">
+                        <i data-feather="home" class="w-8 h-8 text-primary-600"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-secondary-900 mb-4 text-center">Limpeza Residencial</h3>
+                    <p class="text-secondary-600 mb-6 text-center">
+                        Limpeza completa de residências, apartamentos e casas com produtos seguros e ecológicos.
+                    </p>
+                    <ul class="space-y-3 text-sm text-secondary-600 mb-8">
+                        <li class="flex items-center">
+                            <i data-feather="check" class="w-4 h-4 text-primary-600 mr-3"></i>
+                            Limpeza de todos os cômodos
+                        </li>
+                        <li class="flex items-center">
+                            <i data-feather="check" class="w-4 h-4 text-primary-600 mr-3"></i>
+                            Banheiros e cozinha profunda
+                        </li>
+                        <li class="flex items-center">
+                            <i data-feather="check" class="w-4 h-4 text-primary-600 mr-3"></i>
+                            Aspiração e lavagem de pisos
+                        </li>
+                        <li class="flex items-center">
+                            <i data-feather="check" class="w-4 h-4 text-primary-600 mr-3"></i>
+                            Limpeza de móveis e superfícies
+                        </li>
+                        <li class="flex items-center">
+                            <i data-feather="check" class="w-4 h-4 text-primary-600 mr-3"></i>
+                            Produtos ecológicos
+                        </li>
+                    </ul>
+                    <div class="text-center">
+                        <span class="text-2xl font-bold text-primary-600">A partir de R$ 80</span>
+                        <p class="text-sm text-secondary-500">por visita</p>
+                    </div>
+                    <div class="text-center mt-6">
+                        <a href="agendamento.html" class="bg-primary-600 hover:bg-primary-700 text-white px-6 py-3 rounded-lg font-medium transition-colors">
+                            Agendar Agora
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Limpeza Comercial -->
+                <div class="bg-white border border-secondary-200 rounded-xl p-8 hover:shadow-xl transition-all duration-300">
+                    <div class="bg-primary-100 rounded-full p-4 w-16 h-16 mx-auto mb-6 flex items-center justify-center">
+                        <i data-feather="briefcase" class="w-8 h-8 text-primary-600"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-secondary-900 mb-4 text-center">Limpeza Comercial</h3>
+                    <p class="text-secondary-600 mb-6 text-center">
+                        Serviços especializados para escritórios, lojas, restaurantes e estabelecimentos comerciais.
+                    </p>
+                    <ul class="space-y-3 text-sm text-secondary-600 mb-8">
+                        <li class="flex items-center">
+                            <i data-feather="check" class="w-4 h-4 text-primary-600 mr-3"></i>
+                            Limpeza de escritórios
+                        </li>
+                        <li class="flex items-center">
+                            <i data-feather="check" class="w-4 h-4 text-primary-600 mr-3"></i>
+                            Sanitização de áreas comuns
+                        </li>
+                        <li class="flex items-center">
+                            <i data-feather="check" class="w-4 h-4 text-primary-600 mr-3"></i>
+                            Limpeza de vidros e fachadas
+                        </li>
+                        <li class="flex items-center">
+                            <i data-feather="check" class="w-4 h-4 text-primary-600 mr-3"></i>
+                            Horários flexíveis
+                        </li>
+                        <li class="flex items-center">
+                            <i data-feather="check" class="w-4 h-4 text-primary-600 mr-3"></i>
+                            Contratos mensais disponíveis
+                        </li>
+                    </ul>
+                    <div class="text-center">
+                        <span class="text-2xl font-bold text-primary-600">A partir de R$ 200</span>
+                        <p class="text-sm text-secondary-500">por visita</p>
+                    </div>
+                    <div class="text-center mt-6">
+                        <a href="agendamento.html" class="bg-primary-600 hover:bg-primary-700 text-white px-6 py-3 rounded-lg font-medium transition-colors">
+                            Agendar Agora
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Limpeza Pós-Obra -->
+                <div class="bg-white border border-secondary-200 rounded-xl p-8 hover:shadow-xl transition-all duration-300">
+                    <div class="bg-primary-100 rounded-full p-4 w-16 h-16 mx-auto mb-6 flex items-center justify-center">
+                        <i data-feather="tool" class="w-8 h-8 text-primary-600"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-secondary-900 mb-4 text-center">Limpeza Pós-Obra</h3>
+                    <p class="text-secondary-600 mb-6 text-center">
+                        Limpeza especializada após reformas e construções, removendo resíduos e sujeira pesada.
+                    </p>
+                    <ul class="space-y-3 text-sm text-secondary-600 mb-8">
+                        <li class="flex items-center">
+                            <i data-feather="check" class="w-4 h-4 text-primary-600 mr-3"></i>
+                            Remoção de entulho leve
+                        </li>
+                        <li class="flex items-center">
+                            <i data-feather="check" class="w-4 h-4 text-primary-600 mr-3"></i>
+                            Limpeza de cimento e tinta
+                        </li>
+                        <li class="flex items-center">
+                            <i data-feather="check" class="w-4 h-4 text-primary-600 mr-3"></i>
+                            Aspiração de poeira fina
+                        </li>
+                        <li class="flex items-center">
+                            <i data-feather="check" class="w-4 h-4 text-primary-600 mr-3"></i>
+                            Limpeza de vidros e esquadrias
+                        </li>
+                        <li class="flex items-center">
+                            <i data-feather="check" class="w-4 h-4 text-primary-600 mr-3"></i>
+                            Equipamentos especializados
+                        </li>
+                    </ul>
+                    <div class="text-center">
+                        <span class="text-2xl font-bold text-primary-600">Sob consulta</span>
+                        <p class="text-sm text-secondary-500">conforme o projeto</p>
+                    </div>
+                    <div class="text-center mt-6">
+                        <a href="agendamento.html" class="bg-primary-600 hover:bg-primary-700 text-white px-6 py-3 rounded-lg font-medium transition-colors">
+                            Solicitar Orçamento
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Limpeza de Carpetes -->
+                <div class="bg-white border border-secondary-200 rounded-xl p-8 hover:shadow-xl transition-all duration-300">
+                    <div class="bg-primary-100 rounded-full p-4 w-16 h-16 mx-auto mb-6 flex items-center justify-center">
+                        <i data-feather="layers" class="w-8 h-8 text-primary-600"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-secondary-900 mb-4 text-center">Limpeza de Carpetes</h3>
+                    <p class="text-secondary-600 mb-6 text-center">
+                        Limpeza profissional de carpetes, tapetes e estofados com equipamentos especializados.
+                    </p>
+                    <ul class="space-y-3 text-sm text-secondary-600 mb-8">
+                        <li class="flex items-center">
+                            <i data-feather="check" class="w-4 h-4 text-primary-600 mr-3"></i>
+                            Extração profunda de sujeira
+                        </li>
+                        <li class="flex items-center">
+                            <i data-feather="check" class="w-4 h-4 text-primary-600 mr-3"></i>
+                            Remoção de manchas difíceis
+                        </li>
+                        <li class="flex items-center">
+                            <i data-feather="check" class="w-4 h-4 text-primary-600 mr-3"></i>
+                            Higienização com vapor
+                        </li>
+                        <li class="flex items-center">
+                            <i data-feather="check" class="w-4 h-4 text-primary-600 mr-3"></i>
+                            Produtos anti-alérgicos
+                        </li>
+                        <li class="flex items-center">
+                            <i data-feather="check" class="w-4 h-4 text-primary-600 mr-3"></i>
+                            Secagem rápida
+                        </li>
+                    </ul>
+                    <div class="text-center">
+                        <span class="text-2xl font-bold text-primary-600">A partir de R$ 15</span>
+                        <p class="text-sm text-secondary-500">por m²</p>
+                    </div>
+                    <div class="text-center mt-6">
+                        <a href="agendamento.html" class="bg-primary-600 hover:bg-primary-700 text-white px-6 py-3 rounded-lg font-medium transition-colors">
+                            Agendar Agora
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Limpeza de Vidros -->
+                <div class="bg-white border border-secondary-200 rounded-xl p-8 hover:shadow-xl transition-all duration-300">
+                    <div class="bg-primary-100 rounded-full p-4 w-16 h-16 mx-auto mb-6 flex items-center justify-center">
+                        <i data-feather="square" class="w-8 h-8 text-primary-600"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-secondary-900 mb-4 text-center">Limpeza de Vidros</h3>
+                    <p class="text-secondary-600 mb-6 text-center">
+                        Limpeza especializada de vidros residenciais e comerciais com técnicas profissionais.
+                    </p>
+                    <ul class="space-y-3 text-sm text-secondary-600 mb-8">
+                        <li class="flex items-center">
+                            <i data-feather="check" class="w-4 h-4 text-primary-600 mr-3"></i>
+                            Limpeza interna e externa
+                        </li>
+                        <li class="flex items-center">
+                            <i data-feather="check" class="w-4 h-4 text-primary-600 mr-3"></i>
+                            Remoção de gordura e resíduos
+                        </li>
+                        <li class="flex items-center">
+                            <i data-feather="check" class="w-4 h-4 text-primary-600 mr-3"></i>
+                            Limpeza de esquadrias
+                        </li>
+                        <li class="flex items-center">
+                            <i data-feather="check" class="w-4 h-4 text-primary-600 mr-3"></i>
+                            Equipamentos de segurança
+                        </li>
+                        <li class="flex items-center">
+                            <i data-feather="check" class="w-4 h-4 text-primary-600 mr-3"></i>
+                            Resultado sem riscos
+                        </li>
+                    </ul>
+                    <div class="text-center">
+                        <span class="text-2xl font-bold text-primary-600">A partir de R$ 8</span>
+                        <p class="text-sm text-secondary-500">por m²</p>
+                    </div>
+                    <div class="text-center mt-6">
+                        <a href="agendamento.html" class="bg-primary-600 hover:bg-primary-700 text-white px-6 py-3 rounded-lg font-medium transition-colors">
+                            Agendar Agora
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Higienização -->
+                <div class="bg-white border border-secondary-200 rounded-xl p-8 hover:shadow-xl transition-all duration-300">
+                    <div class="bg-primary-100 rounded-full p-4 w-16 h-16 mx-auto mb-6 flex items-center justify-center">
+                        <i data-feather="droplet" class="w-8 h-8 text-primary-600"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-secondary-900 mb-4 text-center">Higienização</h3>
+                    <p class="text-secondary-600 mb-6 text-center">
+                        Serviços de higienização e sanitização para eliminar vírus, bactérias e fungos.
+                    </p>
+                    <ul class="space-y-3 text-sm text-secondary-600 mb-8">
+                        <li class="flex items-center">
+                            <i data-feather="check" class="w-4 h-4 text-primary-600 mr-3"></i>
+                            Sanitização completa
+                        </li>
+                        <li class="flex items-center">
+                            <i data-feather="check" class="w-4 h-4 text-primary-600 mr-3"></i>
+                            Produtos hospitalares
+                        </li>
+                        <li class="flex items-center">
+                            <i data-feather="check" class="w-4 h-4 text-primary-600 mr-3"></i>
+                            Eliminação de vírus e bactérias
+                        </li>
+                        <li class="flex items-center">
+                            <i data-feather="check" class="w-4 h-4 text-primary-600 mr-3"></i>
+                            Ambientes seguros
+                        </li>
+                        <li class="flex items-center">
+                            <i data-feather="check" class="w-4 h-4 text-primary-600 mr-3"></i>
+                            Certificado de higienização
+                        </li>
+                    </ul>
+                    <div class="text-center">
+                        <span class="text-2xl font-bold text-primary-600">A partir de R$ 120</span>
+                        <p class="text-sm text-secondary-500">por ambiente</p>
+                    </div>
+                    <div class="text-center mt-6">
+                        <a href="agendamento.html" class="bg-primary-600 hover:bg-primary-700 text-white px-6 py-3 rounded-lg font-medium transition-colors">
+                            Agendar Agora
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Processo de Trabalho -->
+    <section class="py-16 bg-secondary-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-secondary-900 mb-4">
+                    Como Trabalhamos
+                </h2>
+                <p class="text-xl text-secondary-600 max-w-2xl mx-auto">
+                    Um processo estruturado para garantir a máxima qualidade e satisfação
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-4 gap-8">
+                <div class="text-center">
+                    <div class="bg-primary-600 text-white rounded-full p-6 w-20 h-20 mx-auto mb-4 flex items-center justify-center">
+                        <span class="text-2xl font-bold">1</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-secondary-900 mb-2">Agendamento</h3>
+                    <p class="text-secondary-600">Entre em contato e agende seu serviço de forma rápida e fácil.</p>
+                </div>
+                
+                <div class="text-center">
+                    <div class="bg-primary-600 text-white rounded-full p-6 w-20 h-20 mx-auto mb-4 flex items-center justify-center">
+                        <span class="text-2xl font-bold">2</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-secondary-900 mb-2">Avaliação</h3>
+                    <p class="text-secondary-600">Nossa equipe avalia o local e define a melhor estratégia de limpeza.</p>
+                </div>
+                
+                <div class="text-center">
+                    <div class="bg-primary-600 text-white rounded-full p-6 w-20 h-20 mx-auto mb-4 flex items-center justify-center">
+                        <span class="text-2xl font-bold">3</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-secondary-900 mb-2">Execução</h3>
+                    <p class="text-secondary-600">Realizamos o serviço com equipamentos profissionais e produtos de qualidade.</p>
+                </div>
+                
+                <div class="text-center">
+                    <div class="bg-primary-600 text-white rounded-full p-6 w-20 h-20 mx-auto mb-4 flex items-center justify-center">
+                        <span class="text-2xl font-bold">4</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-secondary-900 mb-2">Aprovação</h3>
+                    <p class="text-secondary-600">Verificamos se está tudo perfeito e aguardamos sua aprovação final.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 bg-primary-600">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">
+                Precisa de Algum Destes Serviços?
+            </h2>
+            <p class="text-xl text-primary-100 mb-8 max-w-2xl mx-auto">
+                Solicite um orçamento gratuito e deixe nossa equipe especializada 
+                cuidar da limpeza do seu ambiente
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="agendamento.html" class="bg-white text-primary-600 hover:bg-secondary-100 px-8 py-4 rounded-lg font-medium transition-colors">
+                    Agendar Serviço
+                </a>
+                <a href="contato.html" class="border border-white text-white hover:bg-white hover:text-primary-600 px-8 py-4 rounded-lg font-medium transition-colors">
+                    Solicitar Orçamento
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-secondary-900 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center space-x-3 mb-4">
+                        <img src="assets/images/logo.svg" alt="LimpaBrasil" class="h-8 w-8">
+                        <h3 class="text-xl font-bold">LimpaBrasil</h3>
+                    </div>
+                    <p class="text-secondary-400 mb-4">
+                        Sua empresa de limpeza profissional de confiança há mais de 10 anos.
+                    </p>
+                    <div class="flex space-x-3">
+                        <a href="#" class="bg-secondary-800 hover:bg-secondary-700 p-2 rounded">
+                            <i data-feather="facebook" class="w-5 h-5"></i>
+                        </a>
+                        <a href="#" class="bg-secondary-800 hover:bg-secondary-700 p-2 rounded">
+                            <i data-feather="instagram" class="w-5 h-5"></i>
+                        </a>
+                        <a href="#" class="bg-secondary-800 hover:bg-secondary-700 p-2 rounded">
+                            <i data-feather="phone" class="w-5 h-5"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Serviços</h4>
+                    <ul class="space-y-2 text-secondary-400">
+                        <li><a href="servicos.html" class="hover:text-white transition-colors">Limpeza Residencial</a></li>
+                        <li><a href="servicos.html" class="hover:text-white transition-colors">Limpeza Comercial</a></li>
+                        <li><a href="servicos.html" class="hover:text-white transition-colors">Limpeza Pós-Obra</a></li>
+                        <li><a href="servicos.html" class="hover:text-white transition-colors">Limpeza de Escritórios</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Empresa</h4>
+                    <ul class="space-y-2 text-secondary-400">
+                        <li><a href="sobre.html" class="hover:text-white transition-colors">Sobre Nós</a></li>
+                        <li><a href="servicos.html" class="hover:text-white transition-colors">Nossos Serviços</a></li>
+                        <li><a href="contato.html" class="hover:text-white transition-colors">Contato</a></li>
+                        <li><a href="agendamento.html" class="hover:text-white transition-colors">Agendamento</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Contato</h4>
+                    <div class="space-y-3 text-secondary-400">
+                        <div class="flex items-center space-x-3">
+                            <i data-feather="phone" class="w-5 h-5"></i>
+                            <span>(11) 99999-9999</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <i data-feather="mail" class="w-5 h-5"></i>
+                            <span>contato@limpabrasil.com.br</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <i data-feather="map-pin" class="w-5 h-5"></i>
+                            <span>São Paulo, SP - Brasil</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-secondary-800 mt-8 pt-8 text-center text-secondary-400">
+                <p>&copy; 2025 LimpaBrasil. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+    <script>feather.replace()</script>
+</body>
+</html>

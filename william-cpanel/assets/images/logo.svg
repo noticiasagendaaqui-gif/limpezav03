@@ -1,0 +1,19 @@
+<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background circle -->
+  <circle cx="32" cy="32" r="32" fill="#0284c7"/>
+  
+  <!-- Water droplet -->
+  <path d="M32 12C32 12 20 24 20 34C20 40.627 25.373 46 32 46C38.627 46 44 40.627 44 34C44 24 32 12 32 12Z" fill="white" opacity="0.9"/>
+  
+  <!-- Sparkle/clean effect -->
+  <circle cx="26" cy="28" r="2" fill="white"/>
+  <circle cx="38" cy="32" r="1.5" fill="white" opacity="0.8"/>
+  <circle cx="30" cy="38" r="1" fill="white" opacity="0.6"/>
+  
+  <!-- Cleaning brush -->
+  <rect x="36" y="18" width="3" height="12" rx="1.5" fill="white" opacity="0.8"/>
+  <rect x="34" y="16" width="7" height="3" rx="1.5" fill="white" opacity="0.6"/>
+  
+  <!-- Bottom wave -->
+  <path d="M12 48C16 46 20 50 24 48C28 46 32 50 36 48C40 46 44 50 48 48C52 46 56 50 60 48V56C60 60 56 64 52 64H12C8 64 4 60 4 56V48C8 50 12 46 12 48Z" fill="white" opacity="0.3"/>
+</svg>

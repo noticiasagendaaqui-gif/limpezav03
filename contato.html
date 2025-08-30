@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - LimpaBrasil</title>
+    <meta name="description" content="Entre em contato com a LimpaBrasil. Solicite orçamentos e tire suas dúvidas sobre nossos serviços de limpeza profissional.">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: {
+                            50: '#f0f9ff',
+                            100: '#e0f2fe',
+                            200: '#bae6fd',
+                            300: '#7dd3fc',
+                            400: '#38bdf8',
+                            500: '#0ea5e9',
+                            600: '#0284c7',
+                            700: '#0369a1',
+                            800: '#075985',
+                            900: '#0c4a6e'
+                        },
+                        secondary: {
+                            50: '#f8fafc',
+                            100: '#f1f5f9',
+                            200: '#e2e8f0',
+                            300: '#cbd5e1',
+                            400: '#94a3b8',
+                            500: '#64748b',
+                            600: '#475569',
+                            700: '#334155',
+                            800: '#1e293b',
+                            900: '#0f172a'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="bg-white">
+    <!-- Header/Navigation -->
+    <header class="bg-white shadow-lg fixed w-full top-0 z-50">
+        <nav class="container mx-auto px-4 py-4">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center space-x-3">
+                    <img src="assets/images/logo.svg" alt="LimpaBrasil" class="h-10 w-10">
+                    <h1 class="text-2xl font-bold text-primary-600">LimpaBrasil</h1>
+                </div>
+
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="text-secondary-700 hover:text-primary-600 font-medium transition-colors">Início</a>
+                    <a href="sobre.html" class="text-secondary-700 hover:text-primary-600 font-medium transition-colors">Sobre</a>
+                    <a href="servicos.html" class="text-secondary-700 hover:text-primary-600 font-medium transition-colors">Serviços</a>
+                    <a href="agendamento.html" class="text-secondary-700 hover:text-primary-600 font-medium transition-colors">Agendamento</a>
+                    <a href="contato.html" class="text-primary-600 font-medium">Contato</a>
+                </div>
+
+                <!-- CTA Button -->
+                <div class="hidden md:block">
+                    <a href="agendamento.html" class="bg-primary-600 hover:bg-primary-700 text-white px-6 py-3 rounded-lg font-medium transition-colors">
+                        Agendar Serviço
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" class="md:hidden p-2">
+                    <i data-feather="menu" class="w-6 h-6"></i>
+                </button>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="hidden md:hidden mt-4 pb-4">
+                <a href="index.html" class="block py-2 text-secondary-700 hover:text-primary-600">Início</a>
+                <a href="sobre.html" class="block py-2 text-secondary-700 hover:text-primary-600">Sobre</a>
+                <a href="servicos.html" class="block py-2 text-secondary-700 hover:text-primary-600">Serviços</a>
+                <a href="agendamento.html" class="block py-2 text-secondary-700 hover:text-primary-600">Agendamento</a>
+                <a href="contato.html" class="block py-2 text-primary-600">Contato</a>
+                <a href="agendamento.html" class="block mt-4 bg-primary-600 hover:bg-primary-700 text-white px-6 py-3 rounded-lg font-medium text-center">
+                    Agendar Serviço
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="pt-24 pb-16 bg-gradient-to-br from-primary-50 to-primary-100">
+        <div class="container mx-auto px-4">
+            <div class="text-center">
+                <h1 class="text-4xl md:text-5xl font-bold text-secondary-900 mb-6">
+                    Entre em <span class="text-primary-600">Contato</span>
+                </h1>
+                <p class="text-xl text-secondary-600 max-w-3xl mx-auto">
+                    Estamos aqui para ajudar! Entre em contato conosco e solicite seu orçamento gratuito. 
+                    Nossa equipe responde em até 2 horas úteis.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Info -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-3 gap-8 mb-16">
+                <div class="text-center">
+                    <div class="bg-primary-100 rounded-full p-6 w-20 h-20 mx-auto mb-6 flex items-center justify-center">
+                        <i data-feather="phone" class="w-8 h-8 text-primary-600"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-secondary-900 mb-4">Telefone</h3>
+                    <p class="text-secondary-600 mb-4">Ligue agora e fale diretamente com nossa equipe</p>
+                    <a href="tel:+553198025882" class="text-primary-600 hover:text-primary-700 font-semibold text-xl">
+                        (31) 98025-2882
+                    </a>
+                    <p class="text-sm text-secondary-500 mt-2">Segunda a Sexta: 8h às 18h</p>
+                    <p class="text-sm text-secondary-500">Sábado: 8h às 14h</p>
+                </div>
+
+                <div class="text-center">
+                    <div class="bg-primary-100 rounded-full p-6 w-20 h-20 mx-auto mb-6 flex items-center justify-center">
+                        <i data-feather="mail" class="w-8 h-8 text-primary-600"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-secondary-900 mb-4">E-mail</h3>
+                    <p class="text-secondary-600 mb-4">Envie sua mensagem ou solicitação de orçamento</p>
+                    <a href="mailto:contato@limpabrasil.com.br" class="text-primary-600 hover:text-primary-700 font-semibold">
+                        contato@limpabrasil.com.br
+                    </a>
+                    <p class="text-sm text-secondary-500 mt-2">Respondemos em até 2 horas úteis</p>
+                </div>
+
+                <div class="text-center">
+                    <div class="bg-primary-100 rounded-full p-6 w-20 h-20 mx-auto mb-6 flex items-center justify-center">
+                        <i data-feather="message-circle" class="w-8 h-8 text-primary-600"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-secondary-900 mb-4">WhatsApp</h3>
+                    <p class="text-secondary-600 mb-4">Converse conosco pelo WhatsApp</p>
+                    <a href="https://wa.me/553198025882" target="_blank" 
+                       class="inline-block bg-green-500 hover:bg-green-600 text-white px-6 py-3 rounded-lg font-semibold transition-colors">
+                        <i data-feather="message-circle" class="w-5 h-5 inline-block mr-2"></i>
+                        Iniciar Conversa
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section class="py-16 bg-secondary-50">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-secondary-900 mb-4">
+                        Envie Sua Mensagem
+                    </h2>
+                    <p class="text-xl text-secondary-600">
+                        Preencha o formulário abaixo e entraremos em contato em breve
+                    </p>
+                </div>
+
+                <div class="bg-white rounded-2xl shadow-lg p-8">
+                    <!-- Success Message -->
+                    <div id="success-message" class="hidden bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded mb-6">
+                        <div class="flex items-center">
+                            <i data-feather="check-circle" class="w-5 h-5 mr-2"></i>
+                            <span>Mensagem enviada com sucesso! Entraremos em contato em breve.</span>
+                        </div>
+                    </div>
+
+                    <!-- Error Message -->
+                    <div id="error-message" class="hidden bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded mb-6">
+                        <div class="flex items-center">
+                            <i data-feather="alert-circle" class="w-5 h-5 mr-2"></i>
+                            <span id="error-text">Ocorreu um erro. Tente novamente.</span>
+                        </div>
+                    </div>
+
+                    <form id="contact-form" action="api/contact.php" method="POST">
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div>
+                                <label for="nome" class="block text-sm font-medium text-secondary-700 mb-2">
+                                    Nome Completo *
+                                </label>
+                                <input type="text" id="nome" name="nome" required
+                                    class="w-full px-4 py-3 border border-secondary-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition-colors">
+                            </div>
+
+                            <div>
+                                <label for="email" class="block text-sm font-medium text-secondary-700 mb-2">
+                                    E-mail *
+                                </label>
+                                <input type="email" id="email" name="email" required
+                                    class="w-full px-4 py-3 border border-secondary-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition-colors">
+                            </div>
+
+                            <div>
+                                <label for="telefone" class="block text-sm font-medium text-secondary-700 mb-2">
+                                    Telefone
+                                </label>
+                                <input type="tel" id="telefone" name="telefone"
+                                    placeholder="(11) 99999-9999"
+                                    class="w-full px-4 py-3 border border-secondary-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition-colors">
+                            </div>
+
+                            <div>
+                                <label for="assunto" class="block text-sm font-medium text-secondary-700 mb-2">
+                                    Assunto *
+                                </label>
+                                <select id="assunto" name="assunto" required
+                                    class="w-full px-4 py-3 border border-secondary-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition-colors">
+                                    <option value="">Selecione o assunto</option>
+                                    <option value="orcamento">Solicitar Orçamento</option>
+                                    <option value="agendamento">Agendamento de Serviço</option>
+                                    <option value="duvidas">Dúvidas sobre Serviços</option>
+                                    <option value="reclamacao">Reclamação</option>
+                                    <option value="elogio">Elogio</option>
+                                    <option value="outros">Outros</option>
+                                </select>
+                            </div>
+
+                            <div class="md:col-span-2">
+                                <label for="endereco" class="block text-sm font-medium text-secondary-700 mb-2">
+                                    Endereço (opcional)
+                                </label>
+                                <input type="text" id="endereco" name="endereco"
+                                    placeholder="Cidade, bairro ou região"
+                                    class="w-full px-4 py-3 border border-secondary-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition-colors">
+                            </div>
+
+                            <div class="md:col-span-2">
+                                <label for="mensagem" class="block text-sm font-medium text-secondary-700 mb-2">
+                                    Mensagem *
+                                </label>
+                                <textarea id="mensagem" name="mensagem" rows="6" required
+                                    placeholder="Descreva detalhadamente sua solicitação, dúvida ou comentário..."
+                                    class="w-full px-4 py-3 border border-secondary-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition-colors resize-vertical"></textarea>
+                            </div>
+
+                            <div class="md:col-span-2">
+                                <label class="flex items-start space-x-3 cursor-pointer">
+                                    <input type="checkbox" id="aceite" name="aceite" required
+                                        class="mt-1 h-4 w-4 text-primary-600 focus:ring-primary-500 border-secondary-300 rounded">
+                                    <span class="text-sm text-secondary-600">
+                                        Aceito receber informações sobre os serviços da LimpaBrasil e autorizo o contato 
+                                        por telefone, e-mail ou WhatsApp. *
+                                    </span>
+                                </label>
+                            </div>
+
+                            <div class="md:col-span-2 text-center pt-6">
+                                <button type="submit" id="submit-btn"
+                                    class="bg-primary-600 hover:bg-primary-700 text-white px-8 py-4 rounded-lg font-medium text-lg transition-colors disabled:opacity-50 disabled:cursor-not-allowed">
+                                    <span id="submit-text">Enviar Mensagem</span>
+                                    <span id="submit-loading" class="hidden">
+                                        <i data-feather="loader" class="w-5 h-5 inline-block animate-spin mr-2"></i>
+                                        Enviando...
+                                    </span>
+                                </button>
+                                <p class="text-sm text-secondary-500 mt-3">
+                                    Respondemos em até 2 horas úteis
+                                </p>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Location Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-secondary-900 mb-4">
+                    Nossa Localização
+                </h2>
+                <p class="text-xl text-secondary-600">
+                    Atendemos toda a região metropolitana de Belo Horizonte
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h3 class="text-2xl font-bold text-secondary-900 mb-6">Áreas de Atendimento</h3>
+                    <div class="space-y-4">
+                        <div class="flex items-center space-x-3">
+                            <i data-feather="check-circle" class="w-5 h-5 text-primary-600"></i>
+                            <span class="text-secondary-700">São José da Lapa</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <i data-feather="check-circle" class="w-5 h-5 text-primary-600"></i>
+                            <span class="text-secondary-700">Região Metropolitana de BH</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <i data-feather="check-circle" class="w-5 h-5 text-primary-600"></i>
+                            <span class="text-secondary-700">Belo Horizonte</span>
+                        </div>
+                    </div>
+
+                    <div class="mt-8 p-6 bg-primary-50 rounded-xl">
+                        <h4 class="text-lg font-semibold text-secondary-900 mb-2">Horário de Atendimento</h4>
+                        <div class="space-y-2 text-secondary-600">
+                            <p><strong>Segunda a Sexta:</strong> 8h às 18h</p>
+                            <p><strong>Sábado:</strong> 8h às 14h</p>
+                            <p><strong>Domingo:</strong> Emergências apenas</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-secondary-100 rounded-xl p-8 text-center">
+                    <div class="bg-primary-600 rounded-full p-6 w-24 h-24 mx-auto mb-6 flex items-center justify-center">
+                        <i data-feather="map-pin" class="w-12 h-12 text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-secondary-900 mb-4">Escritório Central</h3>
+                    <p class="text-secondary-600 mb-6">
+                        Rua das Limpezas, 123<br>
+                        Vila Profissional - São Paulo/SP<br>
+                        CEP: 01234-567
+                    </p>
+                    <a href="https://goo.gl/maps" target="_blank" 
+                       class="inline-block bg-primary-600 hover:bg-primary-700 text-white px-6 py-3 rounded-lg font-medium transition-colors">
+                        <i data-feather="navigation" class="w-5 h-5 inline-block mr-2"></i>
+                        Ver no Mapa
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 bg-primary-600">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">
+                Pronto Para Começar?
+            </h2>
+            <p class="text-xl text-primary-100 mb-8 max-w-2xl mx-auto">
+                Entre em contato agora mesmo e solicite seu orçamento gratuito. 
+                Nossa equipe está pronta para atender você!
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="agendamento.html" class="bg-white text-primary-600 hover:bg-secondary-100 px-8 py-4 rounded-lg font-medium transition-colors">
+                    Agendar Serviço
+                </a>
+                <a href="https://wa.me/553198025882" target="_blank" class="border border-white text-white hover:bg-white hover:text-primary-600 px-8 py-4 rounded-lg font-medium transition-colors">
+                    WhatsApp
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-secondary-900 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center space-x-3 mb-4">
+                        <img src="assets/images/logo.svg" alt="LimpaBrasil" class="h-8 w-8">
+                        <h3 class="text-xl font-bold">LimpaBrasil</h3>
+                    </div>
+                    <p class="text-secondary-400 mb-4">
+                        Sua empresa de limpeza profissional de confiança há mais de 10 anos.
+                    </p>
+                    <div class="flex space-x-3">
+                        <a href="#" class="bg-secondary-800 hover:bg-secondary-700 p-2 rounded">
+                            <i data-feather="facebook" class="w-5 h-5"></i>
+                        </a>
+                        <a href="#" class="bg-secondary-800 hover:bg-secondary-700 p-2 rounded">
+                            <i data-feather="instagram" class="w-5 h-5"></i>
+                        </a>
+                        <a href="#" class="bg-secondary-800 hover:bg-secondary-700 p-2 rounded">
+                            <i data-feather="phone" class="w-5 h-5"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Serviços</h4>
+                    <ul class="space-y-2 text-secondary-400">
+                        <li><a href="servicos.html" class="hover:text-white transition-colors">Limpeza Residencial</a></li>
+                        <li><a href="servicos.html" class="hover:text-white transition-colors">Limpeza Comercial</a></li>
+                        <li><a href="servicos.html" class="hover:text-white transition-colors">Limpeza Pós-Obra</a></li>
+                        <li><a href="servicos.html" class="hover:text-white transition-colors">Limpeza de Escritórios</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Empresa</h4>
+                    <ul class="space-y-2 text-secondary-400">
+                        <li><a href="sobre.html" class="hover:text-white transition-colors">Sobre Nós</a></li>
+                        <li><a href="servicos.html" class="hover:text-white transition-colors">Nossos Serviços</a></li>
+                        <li><a href="contato.html" class="hover:text-white transition-colors">Contato</a></li>
+                        <li><a href="agendamento.html" class="hover:text-white transition-colors">Agendamento</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Contato</h4>
+                    <div class="space-y-3 text-secondary-400">
+                        <div class="flex items-center space-x-3">
+                            <i data-feather="phone" class="w-5 h-5"></i>
+                            <span>(31) 98025-2882</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <i data-feather="mail" class="w-5 h-5"></i>
+                            <span>contato@limpabrasil.com.br</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <i data-feather="map-pin" class="w-5 h-5"></i>
+                            <span>São Paulo, SP - Brasil</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-t border-secondary-800 mt-8 pt-8 text-center text-secondary-400">
+                <p>&copy; 2025 LimpaBrasil. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+    <script>
+        // Form handling
+        document.getElementById('contact-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            const submitBtn = document.getElementById('submit-btn');
+            const submitText = document.getElementById('submit-text');
+            const submitLoading = document.getElementById('submit-loading');
+            const successMessage = document.getElementById('success-message');
+            const errorMessage = document.getElementById('error-message');
+
+            // Show loading state
+            submitBtn.disabled = true;
+            submitText.classList.add('hidden');
+            submitLoading.classList.remove('hidden');
+
+            // Hide previous messages
+            successMessage.classList.add('hidden');
+            errorMessage.classList.add('hidden');
+
+            const formData = new FormData(this);
+
+            fetch('api/contact.php', {
+                method: 'POST',
+                body: formData
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    successMessage.classList.remove('hidden');
+                    this.reset();
+                    window.scrollTo({top: 0, behavior: 'smooth'});
+                } else {
+                    document.getElementById('error-text').textContent = data.message || 'Ocorreu um erro. Tente novamente.';
+                    errorMessage.classList.remove('hidden');
+                }
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                errorMessage.classList.remove('hidden');
+            })
+            .finally(() => {
+                // Reset button state
+                submitBtn.disabled = false;
+                submitText.classList.remove('hidden');
+                submitLoading.classList.add('hidden');
+            });
+        });
+
+        // Phone mask
+        document.getElementById('telefone').addEventListener('input', function(e) {
+            let value = e.target.value.replace(/\D/g, '');
+            value = value.replace(/(\d{2})(\d)/, '($1) $2');
+            value = value.replace(/(\d{5})(\d)/, '$1-$2');
+            e.target.value = value;
+        });
+
+        feather.replace()
+    </script>
+</body>
+</html>
